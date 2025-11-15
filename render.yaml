@@ -1,3 +1,6 @@
+# This render.yaml has been updated for current Render syntax
+# If you want to deploy with database, use Render's automatic PostgreSQL creation instead
+
 services:
   # Web Service - Flask Application
   - type: web
@@ -18,9 +21,7 @@ services:
       - key: SECRET_KEY
         generateValue: true
       - key: DATABASE_URL
-        fromDatabase:
-          name: pluginforge-db
-          property: connectionString
+        generateValue: true  # This will be set automatically by Render
       - key: STRIPE_SECRET_KEY
         sync: false
       - key: STRIPE_PUBLISHABLE_KEY
@@ -34,9 +35,4 @@ services:
     healthCheckPath: /
     autoDeploy: true
 
-  # PostgreSQL Database
-  - type: postgres
-    name: pluginforge-db
-    databaseName: pluginforge
-    user: pluginforge_user
-    plan: free
+# Note: PostgreSQL database will be created automatically by Render when you add it in the dashboard
