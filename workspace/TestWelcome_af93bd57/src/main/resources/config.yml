@@ -1,0 +1,13 @@
+# TestWelcome Configuration File
+#
+# This file controls the default behavior of the TestWelcome plugin.
+# You can customize the message that is sent to players when they join the server.
+#
+# Placeholders:
+#   {player} - Will be replaced with the player's name.
+#
+# Color Codes:
+#   Use '&' followed by a color/formatting code (e.g., &a, &b, &c, &l, etc.).
+#   Example: "&aWelcome, {player}!" will be shown in light green.
+
+welcome-message: "&aWelcome to the server, {player}!"

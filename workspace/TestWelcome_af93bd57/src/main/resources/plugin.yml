@@ -1,0 +1,6 @@
+name: TestWelcome
+main: com.pluginforge.testwelcome.TestWelcome
+version: 1.0.0
+author: PluginCraft AI
+description: A simple welcome plugin that sends a message when players join
+api-version: 1.20

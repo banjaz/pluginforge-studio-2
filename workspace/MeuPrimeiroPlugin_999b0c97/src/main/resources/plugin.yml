@@ -1,0 +1,15 @@
+name: MeuPrimeiroPlugin
+main: com.pluginforge.meuprimeiroplugin.MeuPrimeiroPlugin
+version: 1.0.0
+author: TestUser
+description: Plugin básico de boas-vindas.
+api-version: '1.20'
+commands:
+  ola:
+    description: Envia uma mensagem de boas-vindas.
+    usage: /ola
+    permission: meuprimeiroplugin.ola
+permissions:
+  meuprimeiroplugin.ola:
+    description: Permite usar o comando /ola
+    default: true
